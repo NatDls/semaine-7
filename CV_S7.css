@@ -1,0 +1,696 @@
+/*****color
+#B9B18C
+#FFF7D5
+#FFF4C7
+#6E6A58
+#0D0D0B
+#C0B997
+#DCD8C6
+#DA6800
+#B5A699
+#4A3E32
+#A34E00
+#FF7A00
+*****/
+
+@font-face {
+    font-family: 'caviar_dreamsregular';
+    src: url('../fonts/caviardreams-webfont.eot');
+    src: url('../fonts/caviardreams-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/caviardreams-webfont.woff2') format('woff2'),
+         url('../fonts/caviardreams-webfont.woff') format('woff'),
+         url('../fonts/caviardreams-webfont.ttf') format('truetype'),
+         url('../fonts/caviardreams-webfont.svg#caviar_dreamsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'aguafina_scriptregular';
+    src: url('../fonts/aguafinascript-regular-webfont.eot');
+    src: url('../fonts/aguafinascript-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aguafinascript-regular-webfont.woff2') format('woff2'),
+         url('../fonts/aguafinascript-regular-webfont.woff') format('woff'),
+         url('../fonts/aguafinascript-regular-webfont.ttf') format('truetype'),
+         url('../fonts/aguafinascript-regular-webfont.svg#aguafina_scriptregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/** Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b9b18c+0,ff7a00+99 
+background: rgb(185,177,140); /* Old browsers */
+/** 
+background: -moz-linear-gradient(top,  rgba(185,177,140,1) 0%, rgba(255,122,0,1) 99%); /* FF3.6-15 */
+/**
+background: -webkit-linear-gradient(top,  rgba(185,177,140,1) 0%,rgba(255,122,0,1) 99%); /* Chrome10-25,Safari5.1-6 */
+/** background: linear-gradient(to bottom,  rgba(185,177,140,1) 0%,rgba(255,122,0,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/** filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b9b18c', endColorstr='#ff7a00',GradientType=0 ); /* IE6-9 */
+
+.border {
+    /**
+    border: 2px solid black;**/
+}
+
+a {								
+	text-decoration: none;							
+	color: red;							
+	}
+
+h1 {
+    color:#DCD8C6;
+}
+
+h3 {
+    font-family: Caviar_dreamsregular, Arial, sans-serif;
+    margin-top: 0px;
+    color: #B5A699;
+    font-size: 2em;
+    margin-bottom: 25px;
+}
+
+h2, h4 {
+    font-family: Caviar_dreamsregular, Arial, sans-serif;
+    text-align: center;
+    color: #FF7A00;
+}
+
+p {
+   font-family: Helvetica, Arial, sans-serif;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.accueilCV {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #A08D7B;
+    z-index: 1;
+}
+
+.fauxcalque {
+    background-image: url('../images/face.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    opacity: 0.5;
+}
+
+
+.name {
+    margin-top: 4em;
+    font-family: Aguafina_scriptregular, Arial, sans-serif;
+    font-size: 5em;
+    font-weight: bold;
+    color: #0D0D0B;
+    z-index: 3;
+    opacity: 1;
+}
+
+
+.hr1 {
+    margin-bottom: 0px;
+    max-width: 90%;
+    z-index: 3;
+}
+
+.metiers {
+    margin-top: 5px;
+    font-weight: lighter;
+    font-size: 3em;
+    font-family: Caviar_dreamsregular, Arial, sans-serif;
+    color: #0D0D0B;
+    z-index: 3;
+    opacity: 1;
+}
+
+.objectif {
+    margin-bottom: 30px;
+    font-family: Aguafina_scriptregular;
+    font-style: italic;
+    font-size: 1.3em;
+    color: #0D0D0B;
+    opacity: 1;
+    z-index: 3;
+}
+
+.monprofil {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.titre {
+    font-size: 3em;
+    color: #DA6800;
+}
+
+.titre2 {
+    font-size: 2em;
+    color: #DA6800;
+}
+
+.hr2 {
+    margin-top: 0px;
+    margin-bottom: 40px;
+    max-width: 90%;
+}
+
+.row1 {
+    padding: 0px;
+    padding-bottom: 20px;
+    margin: 0px;
+}
+
+.size90 {
+    width: 90%;
+    margin: auto;
+}
+
+.amonpropos {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: left;
+}
+
+.amonpropos h3 {
+    text-align: center;
+}
+
+.maphoto {
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 10px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.maphoto img {
+    border: 1px solid #DA6800;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+
+.details {    
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    line-height: 1em;
+}
+
+span {
+    font-weight: bold;
+}
+
+.iframe {
+    border: 1px solid #DA6800;
+}
+    
+.mesexperiences {
+    background-color: #A08D7B;
+    padding-right: 0;
+    padding-left: 0;
+    
+}
+
+    .mesexperiences h3 {
+        color: #FFF7D5;
+    }
+
+.exp h5 {
+    font-family: Caviar_dreamsregular, Arial, sans-serif;
+    font-size: 1.2em;
+    color: #FFF7D5;
+}
+
+.exp p {
+    font-style: italic;
+    margin-top: -8px;
+}
+
+.listexperiences {
+    margin: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+
+
+
+
+
+.mescompetences {
+    background-color: white;
+    margin: auto;
+}
+
+.competence {
+    color: pink;
+}
+
+;picto {
+    color: orange;
+}
+
+
+
+
+
+//*********************PORTOFOLIO***************/
+
+/**.monportfolio {
+    background-color: #A08D7B;
+    margin: 0;
+    margin: auto;
+    padding: O;
+}**/
+
+#info {
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;              
+    background:#fcf8e3;
+    border:1px solid  #fbeed5;
+    width:95%;
+    max-width:900px;
+    margin:0 auto 40px auto;
+    font-family:arial;
+    font-size:12px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+    #info .info-wrapper {
+            padding:10px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -o-box-sizing: border-box;
+
+        }
+
+        #info a {
+            color:#c09853;
+            text-decoration:none;
+        }
+
+        #info p {
+            margin:5px 0 0 0;
+        }
+
+.container { 
+    position: relative; 
+    width: 960px; 
+    margin: 0 auto; 
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;  
+}
+
+#filters {
+    margin:1%;
+    padding:0;
+    list-style:none;
+}
+
+    #filters li {
+        float:left;
+    }
+    
+    #filters li span {
+        display: block;
+        padding:5px 20px;       
+        text-decoration:none;
+        color:#666;
+        cursor: pointer;
+    }
+    
+    #filters li span.active {
+        background: #e95a44;
+        color:#fff;
+    }
+ 
+
+ 
+#portfoliolist .portfolio {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    width:23%;
+    margin:1%;
+    display:none;
+    float:left;
+    overflow:hidden;
+}
+
+    .portfolio-wrapper {
+        overflow:hidden;
+        position: relative !important;
+        background: #666;
+        cursor:pointer;
+    }
+
+    .portfolio img {
+        max-width:100%;
+        position: relative;
+    }
+    
+    .portfolio .label {
+        position: absolute;
+        width: 100%;
+        height:40px;
+        bottom:-40px;
+    }
+
+        .portfolio .label-bg {
+            background: #e95a44;
+            width: 100%;
+            height:100%;
+            position: absolute;
+            top:0;
+            left:0;
+        }
+    
+        .portfolio .label-text {
+            color:#fff;
+            position: relative;
+            z-index:500;
+            padding:5px 8px;
+        }
+            
+    .portfolio .text-category {
+        display:block;
+        font-size:9px;
+    }
+    
+/* #Tablet (Portrait) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .container {
+        width: 768px; 
+    }
+}
+
+
+/*  #Mobile (Portrait) - Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+    .container { 
+        width: 95%; 
+    }
+    
+    #portfoliolist .portfolio {
+        width:48%;
+        margin:1%;
+    }       
+
+    #ads {
+        display:none;
+    }
+    
+}
+
+
+/* #Mobile (Landscape) - Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {
+        width: 70%;
+    }
+    
+    #ads {
+        display:none;
+    }
+    
+}
+
+/* #Clearing */
+
+/* Self Clearing Goodness */
+.container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+.row:after,
+.clearfix:after {
+  clear: both; }
+.row,
+.clearfix {
+  zoom: 1; }
+
+.clear {
+  clear: both;
+}
+
+
+
+/******copie des fichiers ci-dessus en provenance de l'exo
+
+#info {
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;              
+    background:#fcf8e3;
+    border:1px solid  #fbeed5;
+    width:95%;
+    max-width:900px;
+    margin:0 auto 40px auto;
+    font-family:arial;
+    font-size:12px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+    #info .info-wrapper {
+        padding:10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+
+    }
+
+    #info a {
+        color:#c09853;
+        text-decoration:none;
+    }
+
+    #info p {
+        margin:5px 0 0 0;
+    }
+
+
+.monportofolio .container { 
+    position: relative; 
+    width: 960px; 
+    margin: 0 auto; 
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;  
+}
+
+#filters {
+    margin:1%;
+    padding:0;
+    list-style:none;
+}
+
+    #filters li {
+        float:left;
+    }
+
+    #filters li span {
+        display: block;
+        padding:5px 20px;       
+        text-decoration:none;
+        color:#666;
+        cursor: pointer;
+    }
+
+    #filters li span.active {
+        background: #e95a44;
+        color:#fff;
+    }
+
+
+
+#portfoliolist .portfolio {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    width:23%;
+    margin:1%;
+    display:none;
+    float:left;
+    overflow:hidden;
+}
+
+    .portfolio-wrapper {
+        overflow:hidden;
+        position: relative !important;
+        background: #666;
+        cursor:pointer;
+    }
+
+    .portfolio img {
+        max-width:100%;
+        position: relative;
+    }
+
+    .portfolio .label {
+        position: absolute;
+        width: 100%;
+        height:40px;
+        bottom:-40px;
+    }
+
+        .portfolio .label-bg {
+            background: #e95a44;
+            width: 100%;
+            height:100%;
+            position: absolute;
+            top:0;
+            left:0;
+        }
+
+        .portfolio .label-text {
+            color:#fff;
+            position: relative;
+            z-index:500;
+            padding:5px 8px;
+        }
+
+            .portfolio .text-category {
+                display:block;
+                font-size:9px;
+            }
+
+
+    
+
+
+
+/* #Tablet (Portrait)
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .monportfolio .container {
+        width: 768px; 
+    }
+}
+
+
+/*  #Mobile (Portrait) - Note: Design for a width of 320px 
+@media only screen and (max-width: 767px) {
+    .container { 
+        width: 95%; 
+    }
+    
+    #portfoliolist .portfolio {
+        width:48%;
+        margin:1%;
+    }       
+
+    #ads {
+        display:none;
+    }
+    
+}
+
+
+/* #Mobile (Landscape) - Note: Design for a width of 480px 
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .monportfolio .container {
+        width: 70%;
+    }
+    
+    #ads {
+        display:none;
+    }
+    
+}
+
+/* #Clearing 
+
+/* Self Clearing Goodness 
+.container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+.row:after,
+.clearfix:after {
+  clear: both; }
+.row,
+.clearfix {
+  zoom: 1; }
+
+.clear {
+  clear: both;
+
+
+
+
+****/
+
+.monportfolio {
+    background-color: #A08D7B;
+    margin: 0;
+    margin: auto;
+    padding: O;
+    padding-bottom: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contactme {
+    background-color: #6E6A58;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
