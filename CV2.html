@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>CV WWebDesigner</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/CV_S7.css" />
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+        <script type="text/javascript">
+            $(function () {
+
+            var filterList = {
+
+                init: function () {
+
+                    // Plugin Mixitup, qui permet de filtrer les vignettes par catégorie
+                    $('#portfoliolist').mixitup({
+                        targetSelector: '.portfolio',
+                        filterSelector: '.filter',
+                        effects: ['fade'],
+                        easing: 'snap',
+                        // call the hover effect
+                        onMixEnd: filterList.hoverEffect()
+                    });             
+
+                },
+
+                hoverEffect: function () {
+
+                    // Fonction pour l'effet "hover"
+                    $('#portfoliolist .portfolio').hover(
+                        function () {
+                            $(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+                            $(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');             
+                        },
+                        function () {
+                            $(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+                            $(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');                               
+                        }       
+                    );              
+
+                }
+            };
+
+            // Lance les deux fonctions "hover" et "filtre"
+            filterList.init();
+
+
+        }); 
+        </script>
+        
+    </head>
+    
+    <body>
+        
+        <div class="container-fluid">
+            <header>
+
+            </header>
+            <main>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <!-------------Phase d'accueil----------------->
+                            <div class="row">
+                                <div class="col-sx-12 col-sm-12 accueilCV">
+                                    <div class="fauxcalque">
+                                        <div class="container name">
+                                            <p>NatDls</p>
+                                        </div>
+                                        <div class="container">
+                                            <hr class="hr1">
+                                            <h1 class="metiers"><strong>Infographiste</strong> & <strong>WebDesigner</strong> <strong>Junior</strong></h1>
+                                        </div>
+                                        <div class="container objectif">
+                                            <p>Objectif : Intégrer la matrice</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!------------Phase de profil----------------->
+                            <div class="row row1">
+                                <div class="col-sx-12 col-sm-12 monprofil">
+                                    <div class="row">
+                                        <h2 class="titre">Profil</h2>
+                                        <div class="col-xs-12">
+                                            <hr class="hr2">
+                                        </div>
+                                    </div>
+                                    <div class="row row1 size90">
+                                        <div class="col-xs-12 col-sm-4 amonpropos">
+                                            <h3>A mon propos</h3>
+                                            <p>Issue de la Provence, c'est sur le chant des cigales que j'ai travaillé dans le management de direction, pour enfin décider de goûter au froid de l'est où l'<strong>infographie</strong> m'a conduite. Amoureuse des Mac et des PC, je ne vois la créativité que sous l'angle des sources et d'une charte. Actuellement <strong>Développeuse Web Junior</strong>, j'invite mon futur et non-conventionnel patron à prendre contact avec moi. En attendant, que vivent les slashes, les underscores et les hashtags !</p>
+                                        </div>
+                                        <div class="col-sx-12 col-sm-4 maphoto">
+                                            <h3>My walking-dead selfie</h3>
+                                            <img src="images/DSC_0129.JPG" width="100%" />
+                                        </div>
+                                        <div class="col-sx-12 col-sm-4 details">
+                                            <h3>Mon data</h3>
+                                            <p><span>Nationalité</span> : Française</p>
+                                            <p><span>Age</span> : 4 décennies</p>
+                                            <div class="contenair iframe">
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20873.025906322964!2d5.371440353255661!3d49.16017408331857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1450049030783" width="100%" height="auto" frameborder="0" style="border:1" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!------------Phase des expériences----------------->
+                            <div class="row row1">
+                                <div class="col-sx-12 col-sm-12 mesexperiences">
+                                    <div class="row row1">
+                                        <h2 class="titre">Expériences</h2>
+                                        <hr class="hr2">
+                                        <div class="col-xs-12 listexperiences">
+                                            <h3>Scolaires</h3>
+                                            <div class="row row1">
+                                                <div class="col-sx-12 col-sm-4 exp">
+                                                    <h5><strong>Simplonline</strong> - <strong>OpenClassRoom</strong></h5>
+                                                    <p>Online - 2016</p>
+                                                </div>
+                                                <div class="col-sx-12 col-sm-8">
+                                                    <h5><strong>Developpeur web et mobile</strong></h5>
+                                                    <p>Cette formation en ligne m'a permis de plonger dans l'univers 
+                                                    du front et du end de l'informatique. Et ainsi programmer pour créer 
+                                                    des sites et des applications web sur des langages comme HTML5, CSS3, 
+                                                    Javascript... Ces langages alliés à mes compétences de graphiste font 
+                                                    de moi une <strong>Webdesigner</strong> Junior.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 listexperiences">
+                                            <div class="row row1">
+                                                <div class="col-sx-12 col-sm-4 exp">
+                                                    <h5><span>AFPA</span></h5>
+                                                    <p>Metz</p>
+                                                </div>
+                                                <div class="col-sx-12 col-sm-8">
+                                                    <h5><strong>Infographiste</strong></h5>
+                                                    <p>Cette formation intensive de huit mois m'a permis d'acquérir 
+                                                    la vision globale nécéssaire à la construction de projet de mise 
+                                                    en page Print.A l'aide des outils principaux du graphiste, 
+                                                    les logiciels Illustrator, Photoshop et InDesign, j'ai pu développer 
+                                                    divers projets applicatifs en lien direct avec des professionnels, 
+                                                    tels que des affiches, panneaux publicitaires, invitation print ou web
+                                                    tract, articles de presse et de magazine, publicité ... </p>
+                                                </div>
+                                             </div>
+                                        </div>
+                                        <div class="col-xs-12 listexperiences">
+                                            <div class="row row1">
+                                                <div class="col-sx-12 col-sm-4 exp">
+                                                    <h5><span>Ecole Privée d'Architecture ILEC</span></h5>
+                                                    <p>Cannes</p>
+                                                </div>
+                                                <div class="col-sx-12 col-sm-8">
+                                                    <h5><span>MANAA Design d'espace</span></h5>
+                                                    <p>Cette MANAA m'a permis de réorienté ma carrière vers les métiers d'arts. 
+                                                    La spécialisation architecture m'a permis d'appréhender en profondeur la perspective, 
+                                                    les notions d'architecture élémentaires tels que le design d'espace. 
+                                                    C'est dans le cadre de démarches créatives appliquées 
+                                                    que j'ai pu me sensibiliser à la colorisation 
+                                                    et aux divers matériaux entourant le dessin.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 listexperiences">
+                                            <div class="row row1">
+                                                <div class="col-sx-12 col-sm-4 exp">
+                                                    <h5><span>Ecole Beaussier</span></h5>
+                                                    <p>La Seyne-sur-Mer</p>
+                                                    <p></p>
+                                                </div>
+                                                <div class="col-sx-12 col-sm-8">
+                                                    <h5><span>BTS Action commerciale</span></h5>
+                                                    <p>J'ai étudié le management de direction, la gestion d'évènementiel 
+                                                    mais également les notions de bases de marketing, d'études de marché
+                                                     et de gestion de chiffre d'affaire. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                               
+                                        <div class="col-xs-12 listexperiences">
+                                            <h3>Professionnelles</h3>                                            
+                                            <div class="row row1">
+                                                <div class="col-sx-12 col-sm-4 exp">
+                                                    <h5><span>Société Accounting Luxembourg</span></h5>
+                                                    <p>Luxembourg - 2013 à 2015</p>
+                                                </div>
+                                                <div class="col-sx-12 col-sm-8">
+                                                    <h5><strong>Infographiste</strong></h5>
+                                                    <p>Au sein du service marketing, mon rôle consistait à répondre 
+                                                    aux diverses demandes des pays dans lesquels ma société était affiliée 
+                                                    (travail sur des sources en anglais), ainsi qu'aux besoins internes de 
+                                                    notre service. Au cours de ces deux années enrichissantes, le changement 
+                                                    complet de l'image de marque m'a permis d'aborder tous les aspects des 
+                                                    supports print nécessaires à la vie d'entreprise (documents internes et
+                                                     externes, logotypes, graphiques, publicité web et print, pictogrammes, etc.)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 listexperiences">
+                                            <div class="row row1">
+                                                <div class="col-sx-12 col-sm-4 exp">
+                                                    <h5><span>Galeries Lafayette</span></h5>
+                                                    <p>Toulon - 2002 à 2010</p>
+                                                </div>
+                                                <div class="col-sx-12 col-sm-8">
+                                                    <h5><span>Sous-Direction - Responsable des ventes</span></h5>
+                                                    <p>Huit années de responsabilités en tant que manager de direction
+                                                    au sein de l'une des plus belles enseignes de la mode française, 
+                                                    m'ont enseigné le travail d'équipe, la collaboration et la disponibilité.
+                                                    La gestion de clientèle et de produits, le merchandisage et la 
+                                                    communication sont les principaux outils qui m'ont soutenue dans cette mission, 
+                                                    accompagnée de soixante personnels à encadrer.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 listexperiences">
+                                            <div class="row row1">
+                                                <div class="col-sx-12 col-sm-4 exp">
+                                                    <h5><span>Arsenal</span></h5>
+                                                    <p>Toulon - 1999 à 2002</p>
+                                                </div>
+                                                <div class="col-sx-12 col-sm-8">
+                                                    <h5><span>Secrétaire commerciale</span></h5>
+                                                    <p>En charge de l'accueil, de la gestion de l'économat et 
+                                                    de la gestion du portefeuille d'adhérents, ce poste a été
+                                                    un tremplin vers le commerce.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-----------Phase des compétences------------------------>
+                            <div class="row">
+                                <div class="col-xs-12 mescompetences border">
+                                    <div class="row">
+                                        <div class="col-xs-12 border">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-4 border">
+                                                    <div class="row">
+                                                        <div class="col-xs-12 titrenotions border">
+                                                            <h3 class="titre2">Notions</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-xs-6 col-sm-6 competence border">
+                                                            <ul>
+                                                                <li>HTML5</li>
+                                                                <li>CSS3</li>
+                                                                <li>Bootstrap</li>
+                                                                <li>JavaScript</li>
+                                                                <li>jQuery</li>
+                                                                <li>PHP</li>
+                                                                <li>Ruby</li>
+                                                                <li>Wordpress</li>
+                                                                <li>Github</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-xs-6 col-sm-6 picto border">
+                                                            <ul>
+                                                                <li>
+                                                                    <i class="fa fa-code"></i>
+                                                                    <i class="fa fa-code"></i>
+                                                                    <i class="fa fa-code"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fa fa-css3"></i>
+                                                                    <i class="fa fa-css3"></i>
+                                                                    <i class="fa fa-css3"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fa fa-square"></i>
+                                                                    <i class="fa fa-square"></i>
+                                                                    <i class="fa fa-square"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fa fa-gear"></i>
+                                                                    <i class="fa fa-gear"></i>
+                                                                    <i class="fa fa-gear"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fa fa-gear"></i>
+                                                                    <i class="fa fa-gear"></i>
+                                                                    <i class="fa fa-gear"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fa fa-circle-o"></i>
+                                                                    <i class="fa fa-circle-o"></i>
+                                                                    <i class="fa fa-circle-o"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fa fa-terminal"></i>
+                                                                    <i class="fa fa-terminal"></i>
+                                                                    <i class="fa fa-terminal"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fa fa-wordpress"></i>
+                                                                    <i class="fa fa-wordpress"></i>
+                                                                    <i class="fa fa-wordpress"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fa fa-github"></i>
+                                                                    <i class="fa fa-github"></i>
+                                                                    <i class="fa fa-github"></i>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-4 border">
+                                                    <div class="row">
+                                                        <div class="col-xs-12 titresupports border">
+                                                            <h3 class="titre2">Supports</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-xs-6 col-sm-6 competence border">
+                                                            <ul>
+                                                                <li>PC</li>
+                                                                <li>Windows</li>
+                                                                <li>Mac</li>
+                                                                <li>IOS Mac</li>
+                                                                <li>Illustrator</li>
+                                                                <li>Photoshop</li>
+                                                                <li>InDesign</li>
+                                                                <li>Office</li>
+                                                                <li>Brackets</li>                                        
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-xs-6 col-sm-6 picto border">
+                                                    <ul>
+                                                        <li>
+                                                            <i class="fa fa-laptop"></i>
+                                                            <i class="fa fa-laptop"></i>
+                                                            <i class="fa fa-laptop"></i>
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa fa-windows"></i>
+                                                            <i class="fa fa-windows"></i>
+                                                            <i class="fa fa-windows"></i>
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa fa-desktop"></i>
+                                                            <i class="fa fa-desktop"></i>
+                                                            <i class="fa fa-desktop"></i>
+                                                        </li>
+                                                        <li>
+                                                            <i class="glyphicon glyphicon-apple"></i>
+                                                            <i class="glyphicon glyphicon-apple"></i>
+                                                            <i class="glyphicon glyphicon-apple"></i>
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa fa-pencil-square-o"></i>
+                                                            <i class="fa fa-pencil-square-o"></i>
+                                                            <i class="fa fa-pencil-square-o"></i>
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa fa-photo"></i>
+                                                            <i class="fa fa-photo"></i>
+                                                            <i class="fa fa-photo"></i>
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa fa-file-pdf-o"></i>
+                                                            <i class="fa fa-file-pdf-o"></i>
+                                                            <i class="fa fa-file-pdf-o"></i>
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa fa-file-text"></i>
+                                                            <i class="fa fa-file-text"></i>
+                                                            <i class="fa fa-file-text"></i>
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa fa-sticky-note-o"></i>
+                                                            <i class="fa fa-sticky-note-o"></i>
+                                                            <i class="fa fa-sticky-note-o"></i>
+                                                        </li>                                  
+                                                    </ul>
+                                                </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-4 border">
+                                                    <div class="row">   
+                                                        <div class="col-xs-12 titreslangues border">
+                                                            <div class="row">
+                                                                <h3 class="titre2">Langues</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-xs-6 col-sm-6 competence border">
+                                                        <ul>
+                                                            <li>Français</li>
+                                                            <li>Anglais</li>
+                                                            <li>Espagnol</li>
+                                                        </ul>   
+                                                    </div>
+                                                        <div class="col-xs-6 col-sm-6 picto border">
+                                                            <ul>
+                                                            <li>
+                                                                <i class="glyphicon glyphicon-volume-up"></i>
+                                                                <i class="glyphicon glyphicon-headphones"></i>
+                                                                <i class="fa fa-eye"></i>
+                                                            </li>
+                                                            <li>
+                                                                <i class="glyphicon glyphicon-volume-up"></i>
+                                                                <i class="glyphicon glyphicon-headphones"></i>
+                                                                <i class="fa fa-eye"></i>
+                                                            </li>
+                                                            <li>
+                                                                <i class="glyphicon glyphicon-volume-up"></i>
+                                                                <i class="glyphicon glyphicon-headphones"></i>
+                                                                <i class="fa fa-eye"></i>
+                                                            </li>
+                                                        </ul>
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                            </div>    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!------------Phase portfolio----------------------->
+                            <div class="row row1">
+                                <div class="col-sx-12 col-sm-12 monportfolio">
+                                   
+                                    <div class="container">
+
+                                        <h2 class="titre">Mon portfolio</h2>
+                                        
+                                        <!--data-filter permet de filtrer les vignettes par catégorie-->
+                                        <ul id="filters" class="clearfix row">
+                                            <li><span class="filter active" data-filter="cat1 cat2 cat3 cat4">Toutes mes catégories</span></li>
+                                            <li><span class="filter" data-filter="cat1">Websites</span></li>
+                                            <li><span class="filter" data-filter="cat2">Code/liens github</span></li>
+                                            <li><span class="filter" data-filter="cat3">Lien OCR</span></li>
+                                            <li><span class="filter" data-filter="cat4">Graphisme</span></li>
+                                        </ul>
+
+                                        <div id="portfoliolist"> <!--La div qui contient les vignettes des projets-->
+
+                                            <div class="portfolio cat2" data-cat="cat2">
+                                                <div class="portfolio-wrapper">             
+                                                    <img src="images/portfolios/logo/5.jpg" alt="" />
+                                                    <div class="label">
+                                                        <div class="label-text">
+                                                            <a class="text-title">Annuaire</a>
+                                                            <span class="text-category">Javascript</span>
+                                                        </div>
+                                                        <div class="label-bg"></div>
+                                                    </div>
+                                                </div>
+                                            </div>              
+
+                                            <div class="portfolio cat1" data-cat="cat1">
+                                                <div class="portfolio-wrapper">         
+                                                    <img src="images/portfolios/app/1.jpg" alt="" />
+                                                    <div class="label">
+                                                        <div class="label-text">
+                                                            <a class="text-title">Titre de mon projet HTML/CSS</a>
+                                                            <span class="text-category">HTML/CSS</span>
+                                                        </div>
+                                                        <div class="label-bg"></div>
+                                                    </div>
+                                                </div>
+                                            </div>      
+
+                                            <div class="portfolio cat4" data-cat="cat4">
+                                                <div class="portfolio-wrapper">         
+                                                    <img src="images/portfolios/card/1.jpg" alt="" />
+                                                    <div class="label">
+                                                        <div class="label-text">
+                                                            <a class="text-title">API Open Food Facts</a>
+                                                            <span class="text-category">Ruby</span>
+                                                        </div>
+                                                        <div class="label-bg"></div>
+                                                    </div>
+                                                </div>
+                                            </div>  
+
+                                            <div class="portfolio cat1" data-cat="cat1">
+                                                <div class="portfolio-wrapper">
+                                                    <img src="images/portfolios/app/3.jpg" alt="" />
+                                                    <div class="label">
+                                                        <div class="label-text">
+                                                            <a class="text-title">Page de profil</a>
+                                                            <span class="text-category">HTML/CSS</span>
+                                                        </div>
+                                                        <div class="label-bg"></div>
+                                                    </div>
+                                                </div>
+                                            </div>          
+
+                                            <div class="portfolio cat2" data-cat="cat2">
+                                                <div class="portfolio-wrapper">         
+                                                    <img src="images/portfolios/logo/1.jpg" alt="" />
+                                                    <div class="label">
+                                                        <div class="label-text">
+                                                            <a class="text-title">Titre de mon projet en Javascript</a>
+                                                            <span class="text-category">Javascript</span>
+                                                        </div>
+                                                        <div class="label-bg"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="portfolio cat1" data-cat="cat1">
+                                                <div class="portfolio-wrapper">         
+                                                    <img src="images/portfolios/app/2.jpg" alt="" />
+                                                    <div class="label">
+                                                        <div class="label-text">
+                                                            <a class="text-title">Page placement div</a>
+                                                            <span class="text-category">HTML/CSS</span>
+                                                        </div>
+                                                        <div class="label-bg"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="portfolio cat4" data-cat="cat4">
+                                                <div class="portfolio-wrapper">         
+                                                    <img src="images/portfolios/card/2.jpg" alt="" />
+                                                    <div class="label">
+                                                        <div class="label-text">
+                                                            <a class="text-title">Exercice en Ruby</a>
+                                                            <span class="text-category">Ruby</span>
+                                                        </div>
+                                                        <div class="label-bg"></div>
+                                                    </div>
+                                                </div>
+                                            </div>                              
+
+                                            <div class="portfolio cat3" data-cat="cat3">
+                                                <div class="portfolio-wrapper">         
+                                                    <img src="images/portfolios/icon/1.jpg" alt="" />
+                                                    <div class="label">
+                                                        <div class="label-text">
+                                                            <a class="text-title">Exercice utilisation Bootstrap</a>
+                                                            <span class="text-category">Bootstrap</span>
+                                                        </div>
+                                                        <div class="label-bg"></div>
+                                                    </div>
+                                                </div>
+                                            </div> 
+
+                                            <div class="portfolio cat4" data-cat="cat4">
+                                                <div class="portfolio-wrapper">         
+                                                    <img src="images/portfolios/card/3.png" alt="" />
+                                                    <div class="label">
+                                                        <div class="label-text">
+                                                            <a class="text-title">Titre de mon projet avec Ruby</a>
+                                                            <span class="text-category">Ruby</span>
+                                                        </div>
+                                                        <div class="label-bg"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="portfolio cat2" data-cat="cat2">
+                                                <div class="portfolio-wrapper">         
+                                                    <img src="images/portfolios/logo/3.jpg" alt="" />
+                                                    <div class="label">
+                                                        <div class="label-text">
+                                                            <a class="text-title">Tic-Tac-Toe</a>
+                                                            <span class="text-category">Javascript</span>
+                                                        </div>
+                                                        <div class="label-bg"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="portfolio cat2" data-cat="cat2">
+                                                <div class="portfolio-wrapper">         
+                                                    <img src="images/portfolios/logo/4.jpg" alt="" />
+                                                    <div class="label">
+                                                        <div class="label-text">
+                                                            <a class="text-title">Pierre-Feuille-Ciseau</a>
+                                                            <span class="text-category">Javascript</span>
+                                                        </div>
+                                                        <div class="label-bg"></div>
+                                                    </div>
+                                                </div>
+                                            </div>      
+
+                                            <div class="portfolio cat3" data-cat="cat3">
+                                                <div class="portfolio-wrapper">         
+                                                    <img src="images/portfolios/icon/2.jpg" alt="" />
+                                                    <div class="label">
+                                                        <div class="label-text">
+                                                            <a class="text-title">Titre de mon projet Bootstrap</a>
+                                                            <span class="text-category">Bootstrap</span>
+                                                        </div>
+                                                        <div class="label-bg"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="portfolio cat2" data-cat="cat2">
+                                                <div class="portfolio-wrapper">         
+                                                    <img src="images/portfolios/logo/2.jpg" alt="" />
+                                                    <div class="label">
+                                                        <div class="label-text">
+                                                            <a class="text-title">Cookie Clicker</a>
+                                                            <span class="text-category">Javascript</span>
+                                                        </div>
+                                                    <div class="label-bg"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                         
+                                        </div><!-- portfolio -->
+
+                                    </div><!-- container -->
+
+                                </div><!-- col -->
+                                
+                            </div><!-- row -->
+                            <!------------Phase contactme----------------------->
+                            <div class="row row1">
+                                <div class="col-sx-12 col-sm-12 contactme border">
+                                    <p>iudgvbdfjbv ifdhvfidvbfdjk ifdvfdivdfivhdfivhfdihvfidh</p>
+                                </div>
+                            </div>
+                            <!---------------------FIN des phases------->
+                        </div>
+                    </div>
+                </div><!----balise de fin de container-fluid---->
+            </main>
+            <footer>
+
+            </footer>
+        </div>
+        
+    </body>
+
+</html>
